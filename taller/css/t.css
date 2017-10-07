@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+
+/*
+
+   ######   #######   #####   #######  #######
+   #     #  #        #     #  #           #
+   #     #  #        #        #           #
+   ######   #####     #####   #####       #
+   #   #    #              #  #           #
+   #    #   #        #     #  #           #
+   #     #  #######   #####   #######     #
+
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+
+     ####   #######  #     #  #######  ######      #     #
+    #    #  #        ##    #  #        #     #     #     #
+   #        #        # #   #  #        #     #    ###    #
+   #   ###  #####    #  #  #  #####    ######     # #    #
+   #     #  #        #   # #  #        #   #     #####   #
+    #    #  #        #    ##  #        #    #    #   #   #
+     #####  #######  #     #  #######  #     #  ##   ##  ######
+
+
+*/
+html, body {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+body {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Racing Sans One', sans-serif;
+  font-weight: 400;
+  color: #eee;
+}
+
+h1 {font-size: 63px;}
+h2 {font-size: 56px;}
+h3 {font-size: 49px;}
+h4 {font-size: 42px;}
+h5 {font-size: 35px;}
+h6 {font-size: 28px;}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+p, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  color: #eee;
+}
+
+@media (max-width: 700px) {
+  p, a {
+    font-size: 17.5px;
+    line-height: 21px;
+  }
+}
+
+strong { font-weight: 600; }
+
+em { font-style: italic; }
+
+i {
+  font-size: 28px;
+  color: #222;
+}
+
+br { font-size: 21px; }
+
+.center {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hide { display: none; }
+
+.container {
+  display: block;
+  position: relative;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 17%;
+  padding-top: 3%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding:auto;
+    height: 15%;
+  }
+}
+
+.base {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+
+/*
+
+   #     #     #     ##   ##
+   ##    #     #      #   #
+   # #   #    ###     #   #
+   #  #  #    # #      # #
+   #   # #   #####     # #
+   #    ##   #   #      #
+   #     #  ##   ##     #
+
+
+*/
+nav {
+  display: block;
+  position: relative;
+  height: 50px;
+  padding: 10px;
+  background: white;
+}
+
+nav h1 {
+  letter-spacing: 4px;
+}
+
+nav p {
+  text-decoration: underline;
+}
+
+#logo {
+  display:block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 50px;
+  padding: auto;
+  
+}
+
+#menu{
+  display:block;
+  font-size: 250%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 35px;
+  padding-left: 10px;
+}
+
+#login{
+  display:block;
+  font-size: 250%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 35px;
+  padding-right: 30px;
+}
+
+/*
+
+   #     #  #######     #     #####    #######  ######
+   #     #  #           #     #    #   #        #     #
+   #     #  #          ###    #     #  #        #     #
+   #######  #####      # #    #     #  #####    ######
+   #     #  #         #####   #     #  #        #   #
+   #     #  #         #   #   #    #   #        #    #
+   #     #  #######  ##   ##  #####    #######  #     #
+
+
+*/
+
+.Titulo{
+  display: block;
+  vertical-align: middle;
+  width: 50%;
+  color: #2980B9;
+  padding-top: 2%;
+  padding-left: 25%;
+  text-align: center;
+  }
+
+.car {
+  display: block;
+  width: 100%;
+  height: 600px;
+  box-shadow: 0 6px 14px -4px rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .car {
+    height: 300px;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #eee;
+}
+
+.car div {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.car div img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+
+.Descripcion {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: #eee;
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.margenservicio{
+  padding-top: 25%;
+  
+}
+
+
+/*
+
+   #     #     #      #####   #     #
+   ##   ##     #        #     ##    #
+   # # # #    ###       #     # #   #
+   #  #  #    # #       #     #  #  #
+   #     #   #####      #     #   # #
+   #     #   #   #      #     #    ##
+   #     #  ##   ##   #####   #     #
+
+
+*/
+main {
+  z-index: 3;
+}

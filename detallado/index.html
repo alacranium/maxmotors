@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <title>MAX MOTORS | Detallado</title>
+
+  <!--SEO-->
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+
+  <!--META-->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <link href="" rel="icon"/>
+  <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
+
+  <!--STYLE-->
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Montserrat:400,400i,600|Racing+Sans+One|Raleway:400,400i,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/ajax-loader.gif"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <link href="css/detallado.css" rel="stylesheet"/>
+
+
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<!-- BODY START -->
+<body>
+  <nav>
+    <div>
+    <i class="material-icons" id="menu" >&#xE5D2;</i>
+      <h1 class="nav-ele">MAX</h1>
+      <i class="material-icons" id="login">&#xE853;</i>
+    </div>
+  </nav>
+
+
+  <aside>
+  
+<center>
+  <div class="opc">
+    <input type="button"  value="Autos" name="carros" id="id_carros" onclick ="busca();">
+    <input type="button"  value="Camionetas" name="camioneta" id="id_camionetas" onclick ="busca();">
+    <input type="button"  value="Camiones" name="camion" id="id_camiones" onclick ="busca();">
+    <input type="button"  value="Hogar" name="hogar" id="id_hogar" onclick ="busca();">
+  </div>
+</center>
+
+  </aside>
+  <!--#######-->
+
+    <div class="container">
+      
+      <div id="carrusel">
+        <div>
+          <img src="img/hdr/car-1.jpg">
+          <h1>Carros 1</h1>
+        </div>
+        <div >
+          <img src="img/hdr/car-2.jpg"/>
+          <h1>Carros 2</h1>
+        </div>
+        <div >
+          <img src="img/hdr/car-3.jpg"/>
+          <h1>Carros 3</h1>
+        </div>
+ 
+
+
+
+        <div >
+          <img src="img/hdr/truck-1.jpg"/>
+          <h1>Troca 1</h1>
+        </div>
+        <div >
+          <img src="img/hdr/truck-2.jpg"/>
+          <h1>Troca 2</h1>
+        </div>
+        <div >
+          <img src="img/hdr/truck-3.jpg"/>
+          <h1>Troca 3</h1>
+        </div>
+
+
+
+        <div>
+          <img src="img/hdr/camion-1.jpg"/>
+          <h1>Bus 1</h1>
+        </div>
+        <div>
+          <img src="img/hdr/camion-2.jpg"/>
+          <h1>Bus 2</h1>
+        </div>
+        <div>
+          <img src="img/hdr/camion-3.jpg"/>
+          <h1>Bus 3</h1>
+        </div>
+    
+
+
+        <div>
+          <img src="img/hdr/hogar-1.jpg"/>
+          <h1>Hogar 1</h1>
+        </div>
+        <div>
+          <img src="img/hdr/hogar-2.jpg"/>
+          <h1>Hogar 2</h1>
+        </div>
+        <div>
+          <img src="img/hdr/hogar-3.jpg"/>
+          <h1>Hogar 3</h1>
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+  <div id="detalles" class="base">
+    <div id="carros" >
+      <h6>Autos</h6>
+        <form name="formulario_carros">
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar(800); else restar(800)" value="checkbox"><span>Pulido&amp;Encerado $800<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar(100); else restar(100)" value="checkbox">Lavado de motor $100<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar(450); else restar(450)" value="checkbox">Interiores $450</span><br><br>
+
+          <span>Total  $</span> <input type="number" name="total" value="0" class="i_total">
+          <input type="submit" value="Agendar cita">
+        </form>
+      </div>
+
+
+
+      <div id="camionetas" class="hide">
+      <h6>Camionetas</h6>
+        <form name="formulario_camionetas">
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar1(1200); else restar1(1200)" value="checkbox"><span>Pulido&amp;Encerado $1200<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar1(100); else restar1(100)" value="checkbox">Lavado de motor $100<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar1(600); else restar1(600)" value="checkbox">Interiores $600</span><br><br>
+
+          <span>Total  $</span> <input type="number" name="total1" value="0" class="i_total">
+          <input type="submit" value="Agendar cita">
+        </form>
+      </div>
+
+        <div id="camiones" class="hide">
+        <h6>Camiones</h6>
+        <form name="formulario_camiones">
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar2(1500); else restar2(1500)" value="checkbox"><span>Pulido&amp;Encerado $1500<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar2(100); else restar2(100)" value="checkbox">Lavado de motor $100<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar2(600); else restar2(600)" value="checkbox">Interiores $600</span><br><br>
+
+          <span>Total  $</span> <input type="number" name="total2" value="0" class="i_total">
+          <input type="submit" value="Agendar cita">
+        </form>
+      </div>
+
+
+      <div id="hogar" class="hide">
+      <h6>Hogar</h6>
+        <form name="formulario_hogar">
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar3(350); else restar3(350)" value="checkbox"><span>Salas $350<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar3(20); else restar3(20)" value="checkbox">Sillas $20<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar3(100); else restar3(100)" value="checkbox">Comedores $100<br>
+          <input name="checkbox" type="checkbox" onClick="if (this.checked) sumar3(100); else restar3(100)" value="checkbox">Colchones $100</span><br><br>
+
+          <span>Total  $</span> <input type="number" name="total3" value="0" class="i_total">
+          <input type="submit" value="Agendar cita">
+        </form>
+      </div>
+      </div> 
+</div>
+
+  <footer>
+
+  </footer>
+
+
+<script>
+/*~~~~~~~~~~~~~~~~~~~~carros~~~~~~~~~~~~~~~~~~~~~~*/
+var total=0;
+
+function sumar(valor)
+{
+  total += valor; 
+  document.formulario_carros.total.value=total;
+}
+
+function restar(valor) 
+{
+  total-=valor; 
+  document.formulario_carros.total.value=total;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~camionetas~~~~~~~~~~~~~~~~~~~~~~*/
+var total1=0;
+
+function sumar1(valor)
+{
+  total1 += valor; 
+  document.formulario_camionetas.total1.value=total1;
+}
+
+function restar1(valor) 
+{
+  total1-=valor; 
+  document.formulario_camionetas.total1.value=total1;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~camiones~~~~~~~~~~~~~~~~~~~~~~*/
+var total2=0;
+
+function sumar2(valor)
+{
+  total2 += valor; 
+  document.formulario_camiones.total2.value=total2;
+}
+
+function restar2(valor) 
+{
+  total2-=valor; 
+  document.formulario_camiones.total2.value=total2;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~hogar~~~~~~~~~~~~~~~~~~~~~~*/
+var total3=0;
+
+function sumar3(valor)
+{
+  total3 += valor; 
+  document.formulario_hogar.total3.value=total3;
+}
+
+function restar3(valor) 
+{
+  total3-=valor; 
+  document.formulario_hogar.total3.value=total3;
+}
+
+
+
+/*######################################################################*/
+
+
+function busca()
+{
+var opciones = ["id_carros", "id_camionetas", "id_camiones", "id_hogar"];
+
+for (var i = 0; i < opciones.length; i++) 
+  {
+    var element = opciones[i];
+
+    var opcion = $("#" + element).hasClass("slick-slide slick-current slick-active");
+    //alert (i+ " " +element + " "+ opcion );
+    longitud=opcion.length;
+    var a = element.substring(3,longitud);
+    
+    if (opcion) 
+    {
+     mostrar(a);
+    }
+  }
+  //var active = $('#uno').attr('id');
+  //alert(active);
+
+}
+
+
+function ocultar() 
+{
+          $("#carros").fadeOut();
+          $("#camionetas").fadeOut();
+          $("#camiones").fadeOut();
+          $("#hogar").fadeOut();
+}
+
+function mostrar(arg) 
+{   
+  ocultar();
+
+      setTimeout(function() 
+      {
+          $("#" + arg).fadeIn(200);
+      },100);
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

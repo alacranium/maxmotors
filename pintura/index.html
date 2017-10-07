@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <title>ARCE MOTORS | Enderezado y Pintura</title>
+
+  <!--SEO leer de tarea ngshow, ng hide
+  ng models & banana in a box-->
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+
+  <!--META-->
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <link href="img/logo/favicon.ico" rel="icon"/>
+  <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png">
+
+  <!--STYLE-->
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Montserrat:400,400i,600|Racing+Sans+One|Raleway:400,400i,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.ttf"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.eot"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.svg"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.woff"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/ajax-loader.gif"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <link href="css/enderezado.css" rel="stylesheet"/>
+
+
+  <!--SCRIPTS-->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<!-- BODY START -->
+<body>
+  <nav>
+    <div class="">
+      
+      <div class="logo_taller">
+      <a href="index.html">
+      	<img class="ir" src="img/MAX_M.png" alt="taller" style="max-width: 20%; max-height: 90px; margin-left: auto; margin-right: auto; display: block; vertical-align: middle;"><!-- ya se centro ya no le muevas-->
+      </a>
+      </div>
+      <!--
+      --><div class="icono">
+      <i class="material-icons md-light">account_circle</i>
+      <!-- Deshabilitado
+      <i class="material-icons md-light md-inactive">face</i>
+      -->
+      </div>
+      <!-- Use any element to open the sidenav -->
+		<span style="z-index:1; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#">About</a>
+  		<a href="#">Services</a>
+  		<a href="#">Clients</a>
+  		<a href="#">Contact</a>
+<script>
+  			/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+  		</script>
+	</div>  
+    </div>
+  </nav>
+<!-- Menu desplegable -->
+    
+  <!--Video sencillo-->
+  
+<!--
+<div style='position: relative;padding-bottom: 56.25%; padding-top: 25px;height: 0;'><div style='text-align: center; margin: auto'><iframe allowFullScreen='allowFullScreen' src="https://www.youtube.com/embed/WEZ5CAuHGc4?ecver=1&amp;controls=1&amp;iv_load_policy=1&amp;rel=1&amp;autohide=2&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" style='position: absolute;top: 0;left: 0;width: 100%;height: 100%;'  frameborder="0"></iframe><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a href="https://www.voucherism.uk/firstchoice.co.uk">View all First Choice UK codes</a></div><small style="display: block; text-align: center; margin: 0 auto; font-size:smaller;">Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></div></div>
+
+<video id="some" class="center" width="640" height="380" controls>
+  <source src="video/v2.ogg" type="video/ogg">
+  
+Sorry man. Your browser does not support the video tag.
+</video> 
+-->
+
+<!--Video playlist-->
+<figure id="arc_v">
+	<video poster="img/repair.png" controls>
+		<source src="video/v2.ogg" type="video/ogg" title="Vete Ya">
+    Sorry man. Your browser does not support the video tag.
+		<!--<source src="nambia1.webm" type="video/webm">-->
+	</video>
+	<figcaption>
+		<a href="video/v2.ogg"><img src="img/repair.png" alt="Trabajo 1"></a>
+		<a href="video/va.ogg"><img src="img/repair.png" alt="Trabajo 2"></a>
+		<a href="video/v3.ogg"><img src="img/repair.png" alt="Trabajo 3"></a>
+	</figcaption>
+	<script type="text/javascript">
+		var v_player = document.getElementById("arc_v"),
+		links = v_player.getElementsByTagName('a');
+		for (var i = 0; i < links.length; i++) {
+			links[i].onclick = handler;
+		}
+		function handler(e){
+			e.preventDefault();
+			videotarget = this.getAttribute("href");
+			filename = videotarget.substr(0, videotarget.lastIndexOf('.')) || videotarget;
+			video = document.querySelector("#arc_v video");
+			video.removeAttribute("poster");
+			source = document.querySelectorAll("#arc_v video source");
+			source[0].src = filename + ".ogg";
+			/*source[1].src = filename + ".mp4";*/
+			video.load();
+			video.play();
+		}
+	</script>
+</figure>
+<br>
+<!--Fin Video playlist-->
+<div id="texto" class="ltd">
+	<p id="txts">Texto<br>
+	Mas texto<br>
+	Aun mas texto
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</div>
+<br>
+<!-- Carrusel -->
+    <header class="base">
+
+    <div id="cyr" class="container">
+      <div class="carousel">
+
+        <div>
+          <img src="img/hdr/car-1.jpg"/>
+          <h1 id="ltr">Oferta 1</h1>
+        </div>
+        <div>
+          <img src="img/hdr/car-2.jpg"/>
+          <h1>Oferta 2</h1>
+        </div>
+        <div>
+          <img src="img/hdr/car-3.jpg"/>
+          <h1>Oferta 3</h1>
+        </div>
+        <div>
+          <img src="img/hdr/car-4.jpg"/>
+          <h1>Oferta 4</h1>
+        </div>
+        <div>
+          <img src="img/hdr/car-5.jpg"/>
+          <h1>Oferta 5</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  </main>
+
+  <!--#######-->
+
+  <footer>
+  <div class="fondo">
+  <p id="contact">Información de contacto</p>
+  <p id="dir">Dirección</p>
+  </div>
+  </footer>
+</body>
+</html>

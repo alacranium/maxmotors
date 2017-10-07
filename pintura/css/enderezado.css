@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+
+/*
+
+   ######   #######   #####   #######  #######
+   #     #  #        #     #  #           #
+   #     #  #        #        #           #
+   ######   #####     #####   #####       #
+   #   #    #              #  #           #
+   #    #   #        #     #  #           #
+   #     #  #######   #####   #######     #
+
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+
+     ####   #######  #     #  #######  ######      #     #
+    #    #  #        ##    #  #        #     #     #     #
+   #        #        # #   #  #        #     #    ###    #
+   #   ###  #####    #  #  #  #####    ######     # #    #
+   #     #  #        #   # #  #        #   #     #####   #
+    #    #  #        #    ##  #        #    #    #   #   #
+     #####  #######  #     #  #######  #     #  ##   ##  ######
+
+
+*/
+html, body {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+body {
+  background-image: url("../img/bg.png");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Racing Sans One', sans-serif;
+  font-weight: 400;
+  color: #eee;
+}
+
+h1 {font-size: 63px;}
+h2 {font-size: 56px;}
+h3 {font-size: 49px;}
+h4 {font-size: 42px;}
+h5 {font-size: 35px;}
+h6 {font-size: 28px;}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+p, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  color: #eee;
+}
+
+@media (max-width: 700px) {
+  p, a {
+    font-size: 17.5px;
+    line-height: 21px;
+  }
+}
+
+strong { font-weight: 600; }
+
+em { font-style: italic; }
+
+i {
+  font-size: 28px;
+  color: #222;
+}
+
+br { font-size: 21px; }
+
+.center {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hide { display: none; }
+
+
+
+
+/*
+
+   #     #     #     ##   ##
+   ##    #     #      #   #
+   # #   #    ###     #   #
+   #  #  #    # #      # #
+   #   # #   #####     # #
+   #    ##   #   #      #
+   #     #  ##   ##     #
+
+
+*/
+nav {
+  display: block;
+  position: relative;
+  height: 60px;
+  padding: 20px;
+}
+/*Logo Arce*/
+.logo_taller {
+  /*
+  top: 25px;
+  bottom: 0px;
+  max-width: 30%; 
+  max-height: 30%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 80%;  */
+}
+
+/* Iniciar sesion*/
+.icono {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 80%;
+  margin-right: auto;
+  top: 30px;
+  bottom: 0px;
+}
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { 
+	color: rgba(255, 255, 255, 1); 
+	font-size: 46px;
+}
+/* seccion deshabilitada
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+*/
+/*menu de lado*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*
+
+   #     #  #######     #     #####    #######  ######
+   #     #  #           #     #    #   #        #     #
+   #     #  #          ###    #     #  #        #     #
+   #######  #####      # #    #     #  #####    ######
+   #     #  #         #####   #     #  #        #   #
+   #     #  #         #   #   #    #   #        #    #
+   #     #  #######  ##   ##  #####    #######  #     #
+
+*/
+/*video sencillo
+#some{
+	display :block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}*/
+
+/*video multiple*/
+#arc_v {
+  display: table;
+	line-height: 0;
+	font-size: 0;
+
+	max-width: 70%;
+	height: auto;
+	margin-left: auto;
+  margin-right: auto;
+
+}
+#arc_v video,
+	#arc_v figcaption {
+		display: table-cell;
+		vertical-align: top;
+}
+#arc_v figcaption {
+	width: 25%;
+}
+#arc_v figcaption a {
+	display: block;
+	opacity: .5;
+	transition: 1s opacity;
+}
+#arc_v figcaption a img,
+	figure video {
+		width: 100%;
+		height: auto;
+
+}
+#arc_v figcaption a:hover {
+	opacity: 2;
+}
+@media (max-width: 1700px) {
+	#arc_v video,
+		#arc_v figcaption {
+			display: table-row;
+		}
+
+#arc_v figcaption a {
+	display: inline-block;
+	width: 33.33%;
+  height: 20px;
+}
+}
+/*fin video multiple*/
+
+.carousel {
+  display: block;
+  max-width: 90%;
+  max-height: 30%;
+  box-shadow: 0 6px 14px -4px rgba(0,0,0,.5);
+  overflow: hidden;
+  margin: auto;
+  padding: auto;
+/*  top: 160px;*/
+}
+
+@media (max-width: 800px) {
+  .carousel {
+    height: 60%;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #eee;
+}
+
+.carousel div {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;/*100%*/
+  overflow: hidden;
+}
+
+.carousel div img {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+
+.carousel div h1 {
+  display: block;
+  position: absolute;
+  color: #eee;
+  text-shadow: 2px 2px 6px rgba(0,0,0,.7);
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.5em;
+}
+
+
+/*
+
+   #     #     #      #####   #     #
+   ##   ##     #        #     ##    #
+   # # # #    ###       #     # #   #
+   #  #  #    # #       #     #  #  #
+   #     #   #####      #     #   # #
+   #     #   #   #      #     #    ##
+   #     #  ##   ##   #####   #     #
+
+
+*/
+main {
+  z-index: 3;
+}
+.anchor {
+  color: #4b77be;
+}
+/*pie de pagina*/
+@media (max-width: 320px) {
+	#ltr { 
+      font-size: 75%; 
+   }
+}
+@media (max-width: 320px) {
+	#dir,
+	#contact { 
+      font-size: 75%;
+   }
+}
+
+#texto{
+  float: center;
+  margin: auto;
+  padding: auto;
+  width: 70%;
+  text-align: center;
+  font-size: 75%;
+  background-color: #251E1E;
+  /*bordes mamones*/
+  border-width: 0px 12px 0px 12px;
+  border-style: double;
+  border-color: yellow;
+  border-radius: 40px 40px 60px 60px;
+  -moz-border-radius: 40px 40px 60px 60px;
+  -webkit-border-radius: 40px 40px 60px 60px;
+}
+#txts{ color: white; }
+/* para el parrafo del texto*/
+@media (max-width: 320px) {
+  #txts { 
+      font-size: 115%;
+      color: white;
+   }
+}
+.fondo{
+  float: center;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
