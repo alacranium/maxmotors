@@ -37,7 +37,25 @@
 <body>
   <nav class="base">
     <div>
-      <i class="material-icons" id="menu" >&#xE5D2;</i>
+    <span id="menu" class="material-icons" style="cursor: pointer;" onclick="openNav()">&#xE5D2;</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+<script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+      </script>
+  </div>  
       <img id="logo" src="img/logo/MAX_M.png"/>
       <i class="material-icons" id="login">&#xE853;</i>
     </div>
