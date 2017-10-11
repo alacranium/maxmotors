@@ -40,20 +40,18 @@
   <nav>
     <div class="">
       
-      <div class="logo_taller">
+      <div id="logo">
       <a href="index.html">
       	<img class="ir" src="img/MAX_M.png" alt="taller" style="max-width: 20%; max-height: 90px; margin-left: auto; margin-right: auto; display: block; vertical-align: middle;"><!-- ya se centro ya no le muevas-->
       </a>
       </div>
-      <!--
-      --><div class="icono">
-      <i class="material-icons md-light">account_circle</i>
+      <i class="material-icons" id="login">&#xE853;</i>
       <!-- Deshabilitado
       <i class="material-icons md-light md-inactive">face</i>
       -->
       </div>
       <!-- Use any element to open the sidenav -->
-		<span style="z-index:1; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<span id="menu" class="material-icons" style="cursor: pointer;" onclick="openNav()">&#xE5D2;</span>
     <div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   		<a href="#">About</a>
@@ -74,6 +72,8 @@ function closeNav() {
 	</div>  
     </div>
   </nav>
+
+   <img class="titulo" src="../img/logo/PINTURA.png"> 
 <!-- Menu desplegable -->
     
   <!--Video sencillo-->
@@ -122,7 +122,7 @@ Sorry man. Your browser does not support the video tag.
 </figure>
 <br>
 <!--Fin Video playlist-->
-<div id="texto" class="ltd">
+<!--<div id="texto" class="ltd">
 	<p id="txts">Texto<br>
 	Mas texto<br>
 	Aun mas texto

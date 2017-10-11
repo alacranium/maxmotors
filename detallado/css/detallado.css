@@ -241,8 +241,7 @@ p.nav-ele
   text-align: center;
 }
 
-#logo
-{
+#logo {
   display:block;
   position: absolute;
   top: 0;
@@ -252,11 +251,9 @@ p.nav-ele
   margin: auto;
   height: 50px;
   padding: auto;
-  
 }
 
-#login
-{
+#login{
   display:block;
   font-size: 250%;
   position: absolute;
@@ -278,6 +275,7 @@ p.nav-ele
   margin: auto;
   height: 35px;
   padding-left: 10px;
+  color:black;
 }
 
 .opc
@@ -346,6 +344,12 @@ p.nav-ele
 */
 
 
+ .titulo{
+        height: 100px;
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 10px
+     }
 
 #detalles
 {
