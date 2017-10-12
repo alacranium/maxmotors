@@ -229,17 +229,6 @@ nav p {
   text-decoration: underline;
 }
 
-.nav-ele {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%;
-  color: black;
-}
-
-p.nav-ele 
-{
-  text-align: center;
-}
 
 #logo
 {
@@ -255,6 +244,19 @@ p.nav-ele
   
 }
 
+
+#menu{
+  display:block;
+  font-size: 250%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 35px;
+  padding-left: 10px;
+  color:black;
+}
 #login
 {
   display:block;
@@ -267,25 +269,11 @@ p.nav-ele
   height: 35px;
   padding-right: 30px;
 }
-
-#menu{
-  display:block;
-  font-size: 250%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: 35px;
-  padding-left: 10px;
-}
-
 .opc
 {
   width: 345px;
   position: relative;
   display: block;
-  
   top: 6px;
 }
 
