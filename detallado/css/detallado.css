@@ -230,8 +230,7 @@ nav p {
 }
 
 
-#logo
-{
+#logo {
   display:block;
   position: absolute;
   top: 0;
@@ -241,11 +240,14 @@ nav p {
   margin: auto;
   height: 50px;
   padding: auto;
-  
 }
 
+<<<<<<< HEAD
 
 #menu{
+=======
+#login{
+>>>>>>> 272e0a88cd5c4ac62254f27e7593e7bab0ba0b5e
   display:block;
   font-size: 250%;
   position: absolute;
@@ -267,7 +269,12 @@ nav p {
   right: 0;
   margin: auto;
   height: 35px;
+<<<<<<< HEAD
   padding-right: 30px;
+=======
+  padding-left: 10px;
+  color:black;
+>>>>>>> 272e0a88cd5c4ac62254f27e7593e7bab0ba0b5e
 }
 .opc
 {
@@ -334,6 +341,12 @@ nav p {
 */
 
 
+ .titulo{
+        height: 100px;
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 10px
+     }
 
 #detalles
 {
