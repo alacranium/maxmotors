@@ -228,7 +228,7 @@ nav h1 {
 nav p {
   text-decoration: underline;
 }
-<<<<<<< HEAD
+
 /*navegador*/
 .nav-ele {
   display: inline-block;
@@ -241,9 +241,7 @@ p.nav-ele
 {
   text-align: center;
 }
-=======
 
->>>>>>> 419a05c7b0d6aeb16fd7bf7ef793d44b1029058e
 
 #logo {
   display:block;
@@ -257,12 +255,8 @@ p.nav-ele
   padding: auto;
 }
 
-<<<<<<< HEAD
 
 #menu{
-=======
-#login{
->>>>>>> 272e0a88cd5c4ac62254f27e7593e7bab0ba0b5e
   display:block;
   font-size: 250%;
   position: absolute;
@@ -284,16 +278,13 @@ p.nav-ele
   right: 0;
   margin: auto;
   height: 35px;
-<<<<<<< HEAD
   padding-right: 30px;
-=======
   padding-left: 10px;
   color:black;
->>>>>>> 272e0a88cd5c4ac62254f27e7593e7bab0ba0b5e
 }
 .opc
 {
-  width: 345px;
+  width: 300px;
   position: relative;
   display: block;
   top: 6px;
@@ -366,7 +357,7 @@ p.nav-ele
 #detalles
 {
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: 330px;
   height: 190px;
   box-shadow: 0 6px 14px -4px rgba(0,0,0,.5);
@@ -395,7 +386,7 @@ p.nav-ele
   }
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev:before, .slick-next:before {
   color: #eee;
 }
 
